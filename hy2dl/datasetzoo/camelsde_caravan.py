@@ -36,7 +36,7 @@ class UnifiedCAMELSDE_CARAVAN(BaseDataset):
         self.path_camelsde = Path(path_camelsde)
         self.path_caravan = Path(path_caravan)
         
-        super().__init__(
+        super(UnifiedCAMELSDE_CARAVAN,self).__init__(
             dynamic_input=dynamic_input,
             target=target,
             sequence_length=sequence_length,
